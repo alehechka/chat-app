@@ -1,0 +1,32 @@
+{
+    "css.customData": [
+      ".vscode/tailwind.json"
+    ],
+    "editor.formatOnSave": true,
+    "files.insertFinalNewline": true,
+    "[go]": {
+      "editor.defaultFormatter": "golang.go"
+    },
+    "[templ]": {
+      "editor.defaultFormatter": "a-h.templ"
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features",
+    },
+    "[jsonc]": {
+      "editor.defaultFormatter": "vscode.json-language-features",
+    },
+    "tailwindCSS.includeLanguages": {
+      "templ": "html"
+    },
+    "emmet.includeLanguages": {
+      "templ": "html"
+    },
+    "cSpell.words": [
+      "alehechka",
+      "htmx",
+      "templ",
+      "turso"
+    ]
+  }
+  
