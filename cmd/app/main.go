@@ -1,4 +1,4 @@
-package app
+package main
 
 import (
 	"chat-app/app/handlers"

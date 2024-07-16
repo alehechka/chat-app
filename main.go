@@ -1,7 +1,7 @@
 package main
 
 import (
-	"chat-app/views"
+	"chat-app/app/views"
 	"fmt"
 	"log"
 	"sync"
