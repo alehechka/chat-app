@@ -27,8 +27,9 @@ func app() *cli.App {
 	app.Usage = "Real-time Chat Application"
 	app.Flags = []cli.Flag{
 		&cli.IntFlag{
-			Name:  ArgPort,
-			Value: 7331,
+			Name:    ArgPort,
+			Value:   3000,
+			EnvVars: []string{"HTTP_LISTEN_ADDR", "PORT"},
 		},
 	}
 	app.Action = chatApp
@@ -40,6 +41,7 @@ func chatApp(ctx *cli.Context) error {
 	port := ctx.Int(ArgPort)
 
 	router := fiber.New()
+	handlers.HandleLanding(router)
 	handlers.HandleWebSockets(router)
 
 	return router.Listen(fmt.Sprintf(":%d", port))
